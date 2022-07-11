@@ -35,3 +35,21 @@ Camadas é um técnica importa, mas há desvantagens.
 
 Mas a parte mais difícil de uma arquitetura em camadas é decidir quais camadas ter e
 qual a resonsabilidade de cada camada.
+
+## As Tres Principais Camadas
+
+Para este livro estou centralizando minha discução em torno de uma arquitetura de três camadas:
+
+- Apresentação
+- Domínio
+- Fonte de Dados
+  
+A camada de apresentação lida com interações entre o usuário e o software. As responsabilidades
+principais da camada de apresentação é mostrar informações e interpretar comandos do usuário
+em ações no domínio e na fonte de dados.
+
+A camada de fonte de dados lida com a comunicação com outros sistemas que realizam tarefas em nome da
+aplicação. Estes podem ser monitores de transações, outras aplicações, sistemas de mensagens e assim
+por diante.
+
+A camada de domínio lida com as regras de negócio.
