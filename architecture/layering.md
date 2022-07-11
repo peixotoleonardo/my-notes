@@ -1,7 +1,7 @@
 # Camadas
 
 Camadas é uma das técnicas mais comuns que designers de software usam
-para quebrar parte de um sistema de software complicado.
+para quebrar parte de um software complicado.
 
 Ao pensarmos em um sistema em termos de camadas, você imagina um
 subsistema de software organizado em algumas camadas de bolo, onde
