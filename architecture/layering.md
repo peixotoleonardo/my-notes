@@ -48,3 +48,11 @@ em ações no domínio e na fonte de dados.
 A camada de fonte de dados lida com a comunicação com outros sistemas que realizam tarefas em nome da
 aplicação. Estes podem ser monitores de transações, outras aplicações, sistemas de mensagens e assim
 por diante.
+
+Às vezes, as camadas são organizadas de uma forma que a camada de domínio esconda completamente a camada
+de fonte de dados da camada de apresentação. Mais frequentemente, porém, a camada de apresentação acessa
+a camada de fonte de dados diretamente. Enquanto isso é menos puro, tende a funcionar bem na prática.
+A camada de apresentação pode interpretar um comando do usuário, usar a fonte de dados para extrair os 
+dados relevantes do banco de dados, e, em seguida, deixar a lógica de domínio manipular esses dados
+antes de apresentá-los.
+
