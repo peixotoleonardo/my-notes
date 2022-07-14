@@ -31,7 +31,7 @@ Camadas é um técnica boa, mas há desvantagens.
 Mas a parte mais difícil de uma arquitetura em camadas é decidir quais camadas ter e
 qual a responsabilidade de cada camada.
 
-## As Tres Principais Camadas
+## As Três Principais Camadas
 
 Aqui estou centralizando minha discução em torno de uma arquitetura de três camadas:
 
