@@ -35,4 +35,17 @@ Together these are called the *members* of the class. Variables hold the state
 of the program, and methods operate on that state. If the change is important to
 remember, a variable stores that change.
 
-Java calls a word with special meaning a *keyword*.
+### Comments
+
+Another common part of the code is called a *comment*. Because comments aren't
+executable code, you can place them in many places. There are **three types** of
+comments in Java.
+
+1. single-line comment - //...
+
+2. multiple-line comment - /*...*/, we cannot have nested multiple-line comment
+
+3. Javadoc comment - /**...*/ has a specific structure that the Javadoc tool
+  knows how to read
+
+
