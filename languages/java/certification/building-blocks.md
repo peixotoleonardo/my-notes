@@ -48,4 +48,70 @@ comments in Java.
 3. Javadoc comment - /**...*/ has a specific structure that the Javadoc tool
   knows how to read
 
+### Classes and Sources Files
 
+A top-level class is often public, which means any code can call it.
+Interestingly, Java does not require that the type be public. A top-level is
+a data structure that can be defined independently within a source file.
+
+You can even put two types in the same file. When you do so, at most one of
+top-level types in the file is allowed to be public.
+
+If you have a public type, it needs to match the filename.
+
+## Writing a main() Method
+
+A Java program begins execution with its **main()** method. The **main()**
+method is often called an entry point into the program, because it is the
+starting point that the JVM looks for when it begins running a new program.
+
+### Creating a main() Method
+
+The **main()** method lets the JVM call our code. The simplest possible class
+with a main() method looks like this:
+
+```java
+public class Zoo {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+```
+
+This code prints *Hello World*. To compile and execute this code, type
+it into a file called Zoo.java and execute the following:
+
+```
+$ javac Zoo.java
+$ java Zoo
+```
+
+To compile Java code with the javac command, the file must have the
+extension .java. the name of the file must match the name of the public class.
+The result is a file of bytecode with the same name but with a .class filename
+extension. 
+
+Some rules for a Java file:
+
+- Each file can contain only one public class.
+
+- The filename must match the class name, including case, and have a
+  .java extension
+
+- If the Java class is an entry point for the program, it must contain a valid
+  main() method.
+
+### Passing Parameters to a Java Program
+
+```java
+public class Zoo {
+  public static void main(String[] args) {
+    System.out.println(args[0]);
+    System.out.println(args[1]);
+  }
+}
+```
+
+```sh
+$ javac Zoo.java && java Zoo Foo Bar
+```
