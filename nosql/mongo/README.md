@@ -1,4 +1,4 @@
 # MongoDB
 
-> É um banco de dados **NoSQL** orientado a documentos.
+> It's a NoSQL database oriented around document.
 
